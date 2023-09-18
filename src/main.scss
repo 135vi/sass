@@ -1,3 +1,36 @@
-// h1 {
-//     color: red;
-// }
+@import './variables';
+
+@mixin box($size, $wide) {
+    padding: $size;
+    font-weight: $wide;
+    font-style: italic;
+}
+
+.main {
+    border: $bold dashed brown;
+    & h1 {
+        padding: 30px;
+        color: $primary;
+        & span {
+            color: $secondary;
+            @include box(10px, "bold")
+        }
+    }
+}
+
+.p1 {
+    color: blue;
+    @include box(40px, 200)
+}
+.p2 {
+    color: red;
+    @include box(10px, 300)
+}
+.p3 {
+    color: yellow;
+    @include box(20px, 400)
+}
+.p4 {
+    color: purple;
+    @include box(10px, 100)
+}
