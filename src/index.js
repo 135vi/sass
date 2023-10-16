@@ -7,6 +7,101 @@ let n = parseInt(prompt("Введите число"));
 
 console.log("Цикл остановлен")
 
+// function is2(n) {
+//     if(n === 0) return false;
+//     if(n <= 2) return true;
+//     if(n % 2) return false;
+//     return is2(n / 2)
+// }
+// console.log(is2(32))
+
+
+// function min() {
+//     let minimum = arguments[0]
+//     for(let i=1; i<arguments.length; i++) {
+//         if(arguments[i] < minimum) minimum = arguments[i]
+//     }
+//     return minimum
+// }
+// console.log(min(2,-9,5,-3))
+
+
+// function stringFrom() {
+//     let result = arguments[0]
+//     for (let i=1; i<arguments.length; i++) {
+//         result = result + " " + arguments[i]
+//     }
+//     return result;
+// }
+// console.log(stringFrom('I have', 5, 'apples'))
+
+
+// function factorial(n) {
+//     if(n <= 2) return n;
+//     return n * factorial(n-1)
+// }
+
+// function Fibonacci(n) {
+//     if(n < 3) return 1;
+//     return Fibonacci(n-1) + Fibonacci(n-2);
+// }
+// console.log(Fibonacci(8))
+
+
+// let x = 1;
+// function logX(){
+//     console.log(typeof x);
+// }
+// logX()
+
+
+// function parity(x) {
+//     if(x % 2 == 0)   
+//     parity = "even";
+//     else
+//     parity = "odd";
+// }
+// console.log(parity(3));
+// console.log(parity(2));
+
+
+// function mean() {
+//     if(!arguments.length) return 0;
+//     sum = 0;
+//     for(i=0;i<arguments.length;i++)
+//     sum += arguments[i];
+//     return sum / arguments.length;
+// }
+// console.log(mean())
+
+
+// function logArguments() {
+//     for(i=0; i<arguments.length; i++)
+//     console.log(`argument ${(i+1)} = ${i++}`)
+// }
+// logArguments(1,2,3)
+// logArguments("text")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function mulTab(x) {
     let i = 2;
