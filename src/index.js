@@ -3,9 +3,97 @@ import './main.scss';
 
 console.log("It works!");
 
-let n = parseInt(prompt("Введите число"));
 
-console.log("Цикл остановлен")
+// let arr = [0,1,2,3,4,5];
+// function getidxs(arr, num) {
+
+//     let i = 0;
+//     let j = arr.length - 1;
+//     while (i < j) {
+//         if(arr[i] + arr[j] < num) {
+//             i++
+//         }else if(arr[i] + arr[j] > num) {
+//             j--
+//         }else if(arr[i] + arr[j] === num) {
+//             return [i, j]
+//         }
+//     }
+//     return [];
+
+    // for(let i = 0; i < arr.length - 1; i++) {
+    //     for(let j = i+1; j < arr.length; j++) {
+    //         if(arr[i] + arr[j] === num) return [i, j]
+    //     }
+    // }
+    // return []
+// }
+// console.log(getidxs(arr, 7).join(", "))
+
+
+
+// let arr = [8,3,-6,5,-12]; //1
+// let arr = "2,5,-6,4,-12" //2
+// arr = arr.split(",").map(item => Number(item)) //2
+
+// number 4
+// function maxofarray(arr) {
+//     return arr.reduce((max, item) => (item > max) ? item : max)
+// }
+// console.log(maxofarray(arr))
+
+
+// number 3
+// function sumArray(arr) {
+//     return arr.reduce((sum, item) => sum + item) 
+// }
+// console.log(
+//     sumArray(arr)
+// )
+
+
+// number 2
+// function displayeven(arr) {
+//     arr.forEach(item => {
+//         if (item % 2 === 0) {
+//             console.log(item)
+//         }
+//     });
+// }
+// displayeven(arr)
+
+
+// function myFilter(arr, fn) {
+//     let output = []
+
+//     for(let i=0; i<arr.length; i++) {
+//         if(fn(arr[i], i, arr)) output.push(arr[i]);
+//     }
+
+//     return output
+// }
+
+// number 1
+// function displayArray(arr) {
+//     arr.forEach(element => {
+//         console.log(element)
+//     });
+// }
+// displayArray(/*arr*/ myFilter(arr, item => !(item % 2)))
+
+
+
+
+
+
+
+
+
+
+
+
+// let n = parseInt(prompt("Введите число"));
+
+// console.log("Цикл остановлен")
 
 // function is2(n) {
 //     if(n === 0) return false;
@@ -103,13 +191,13 @@ console.log("Цикл остановлен")
 
 
 
-function mulTab(x) {
-    let i = 2;
-    while (i <= 9) {
-        console.log(`${x} * ${i} = ${x*i}`);
-        i++
-    }
-}
+// function mulTab(x) {
+//     let i = 2;
+//     while (i <= 9) {
+//         console.log(`${x} * ${i} = ${x*i}`);
+//         i++
+//     }
+// }
 
 
 // function isSimple(x) {
