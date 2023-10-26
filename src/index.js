@@ -4,6 +4,61 @@ import './main.scss';
 console.log("It works!");
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://fs.top-academy.ru/api/v1/files/B8o-J11rXSKZ7fb8VlY4c_ZHATIs-A4O?inline=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let arr = [0,1,2,3,4,5];
 // function getidxs(arr, num) {
 
