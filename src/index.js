@@ -4,57 +4,20 @@ import './main.scss';
 console.log("It works!");
 
 
-
-
-
-
-class Rectangle {
-    constructor(topleft, bottomright) {
-        if(topleft instanceof Array && bottomright instanceof Array) {
-            this.topleft = topleft;
-            this.bottomright = bottomright;
-        }else {
-            throw new Error("Неверный формат координат")
+function perfect(number) {
+    let num = 0;
+    for(let i = 1; i <= number / 2; i++) {
+        if(number % i === 0) {
+            num += i;
         }
     }
-    showInfo() {
-        console.log(
-            `
-             Левая верхняя точка: [${this.topleft.join(' ')}]
-             Правая верхняя точка: [${this.bottomright[0]} ${this.topleft[1]}]
-             Левая верхняя точка: [${this.topleft[0]} ${this.bottomright[1]}]
-             Правая верхняя точка: [${this.bottomright.join(' ')}]
-            `
-        )
-    }
-
-    get width() {
-        return this.bottomright[0] - this.topleft[0]
-    }
-    get height() {
-        return this.bottomright[1] - this.topleft[1]
-    }
-    get square() {
-        return this.width * this.height
-    }
-    get perimeter() {
-        return (this.width + this.height) * 2
-    }
-
-    changewidth(n) {
-        this.bottomright = [this.bottomright[0] + n, this.bottomright[1]]
-    }
+    if(num === number && num !== 0) {
+        console.log('perfect')
+    }else [
+        console.log('not perfect')
+    ]
 }
-
-let rect = new Rectangle([2,3], [8,9])
-console.log(rect.showInfo())
-console.log(rect.width)
-console.log(rect.height)
-console.log(rect.square)
-console.log(rect.perimeter)
-
-rect.changewidth(-2)
-console.log(rect.perimeter)
+perfect()
 
 
 
@@ -63,39 +26,53 @@ console.log(rect.perimeter)
 
 
 
+// class Rectangle {
+//     constructor(topleft, bottomright) {
+//         if(topleft instanceof Array && bottomright instanceof Array) {
+//             this.topleft = topleft;
+//             this.bottomright = bottomright;
+//         }else {
+//             throw new Error("Неверный формат координат")
+//         }
+//     }
+//     showInfo() {
+//         console.log(
+//             `
+//              Левая верхняя точка: [${this.topleft.join(' ')}]
+//              Правая верхняя точка: [${this.bottomright[0]} ${this.topleft[1]}]
+//              Левая верхняя точка: [${this.topleft[0]} ${this.bottomright[1]}]
+//              Правая верхняя точка: [${this.bottomright.join(' ')}]
+//             `
+//         )
+//     }
 
+//     get width() {
+//         return this.bottomright[0] - this.topleft[0]
+//     }
+//     get height() {
+//         return this.bottomright[1] - this.topleft[1]
+//     }
+//     get square() {
+//         return this.width * this.height
+//     }
+//     get perimeter() {
+//         return (this.width + this.height) * 2
+//     }
 
+//     changewidth(n) {
+//         this.bottomright = [this.bottomright[0] + n, this.bottomright[1]]
+//     }
+// }
 
+// let rect = new Rectangle([2,3], [8,9])
+// console.log(rect.showInfo())
+// console.log(rect.width)
+// console.log(rect.height)
+// console.log(rect.square)
+// console.log(rect.perimeter)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://fs.top-academy.ru/api/v1/files/B8o-J11rXSKZ7fb8VlY4c_ZHATIs-A4O?inline=true
-
-
-
-
-
-
-
-
-
+// rect.changewidth(-2)
+// console.log(rect.perimeter)
 
 
 
