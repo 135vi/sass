@@ -1,23 +1,44 @@
-import './style.css';
-import './main.scss';
+// import './style.css';
+// import './main.scss';
 
-console.log("It works!");
+// console.log("It works!");
 
 
-function perfect(number) {
-    let num = 0;
-    for(let i = 1; i <= number / 2; i++) {
-        if(number % i === 0) {
-            num += i;
-        }
-    }
-    if(num === number && num !== 0) {
-        console.log('perfect')
-    }else [
-        console.log('not perfect')
-    ]
-}
-perfect()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
